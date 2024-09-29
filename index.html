@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+
+    <title>Placar On-line</title>
+</head>
+<body>
+    <div class="scoreboard">
+        <div class="team">
+          <h2>Time A</h2>
+          <p id="teamAScore">0</p>
+          <div class="btn-container">
+            <button id="teamA-increment" onclick="incrementScore('teamA')">+</button>
+            <button id="teamA-decrement" onclick="decrementScore('teamA')">-</button>
+          </div>
+        </div>
+
+        <button id="reset-btn" onclick="resetScores()">Resetar Placares</button>
+
+        <div class="team">
+          <h2>Time B</h2>
+          <p id="teamBScore">0</p>
+          <div class="btn-container">
+            <button id="teamB-increment" onclick="incrementScore('teamB')">+</button>
+            <button id="teamB-decrement" onclick="decrementScore('teamB')">-</button>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
